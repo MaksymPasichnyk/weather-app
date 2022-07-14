@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+	<div class="weather">
+		<div class="weather__row">
+			<div class="weather__column">
+				<div class="weather__output">
+					<div class="weather__widget weather-widget">
+						<span class="weather-widget__degree">16</span>
+						<div class="weather-widget__location">
+							<span class="weather-widget__city">London</span>
+							<span class="weather-widget__date">06:09 - Monday, 9 Sep 19</span>
+						</div>
+						<div class="weather-widget__desc">
+							<img src="#" alt="weather icon" class="weather-widget__icon">
+							<span class="weather-widget__weather-type">Cloudy</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="weather__column">
+				<div class="weather__aside">
+					<form action="#" class="country-search">
+						<input type="text" placeholder="Another location" class="country-search__field" />
+						<button type="submit" class="country-search__button" href="#">
+						<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+					<!--<ul class="country-list">
+						<li>Birmingham</li>
+						<li>Manchester</li>
+						<li>New York</li>
+						<li>California</li>
+					</ul>-->
+					<div class="weather-details">
+					<h2 class="title">Weather Details</h2>
+					<ul class="weather-details__list">
+						<li>
+							<span>Cloudy</span>
+							<span>86%</span>
+						</li>
+						<li>
+							<span>Humidity</span>
+							<span>62%</span>
+						</li>
+						<li>
+							<span>Wind</span>
+							<span>8km/h</span>
+						</li>
+					</ul>
+				</div>
+				<!--<div class="weather-days">
+					<h2 class="title">Next 5 Days</h2>
+					<ul class="weather-days__list">
+						<li>
+							<span>Mon, 23, 22</span>
+							<span>16 degree</span>
+						</li>
+						<li>
+							<span>Mon, 23, 22</span>
+							<span>16 degree</span>
+						</li>
+					</ul>
+				</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!--<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
+		defer
+	></script>-->
+</body>
+</html>

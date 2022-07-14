@@ -1,0 +1,150 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	height: 100vh;
+	overflow: hidden;
+	font-size: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+.weather {
+	height: 100%;
+	padding: 10em;
+	background: linear-gradient(90deg, rgb(115, 82, 12), rgb(107, 137, 24), rgb(64, 83, 177));
+
+	&__row {
+		display: flex;
+		height: 100%;
+	}
+
+	&__column {
+		
+		&:first-of-type {
+			flex: 1;
+		}
+
+		&:last-of-type {
+			background: rgba(34, 44, 34, 0.6);
+			padding: 2em;
+		}
+	}
+
+	&__output {
+		height: 100%;
+		display: flex;
+		align-items: flex-end;
+		padding: 0 0 5em 5em;
+		background: url('/src/assets/pexels-johannes-plenio-1118873.jpeg') no-repeat center;
+		background-size: cover;
+	}
+}
+
+.weather-widget {
+	display: flex;
+	align-items: center;
+
+	&__desc {
+		display: flex;
+    align-items: center;
+    flex-direction: column;
+	}
+
+	&__degree {
+		font-size: 8rem;
+		color: white;
+		position: relative;
+		padding-right: 20px;
+		margin-right: 5px;
+
+		&::after {
+			content: "";
+			display: block;
+			border: 5px solid #fff;
+			border-radius: 50%;
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			top: 15px;
+			right: 0;
+		}
+	}
+
+	&__location {
+		margin: 0 1em;
+	}
+
+	&__city {
+		font-size: 4.5rem;
+		color: white;
+		display: block;
+		line-height: 1;
+	}
+
+	&__date {
+		font-size: 1rem;
+		color: #fff;
+	}
+
+	&__icon {
+		width: 60px;
+    margin-bottom: -15px;
+	}
+
+	&__weather-type {
+		color: white;
+		font-size: 1.3rem;
+	}
+
+	//span {
+	//	font-size: 1.6em;
+	//	color: white;
+	//}
+}
+
+.country-search {
+	&__button {
+		background: #bdbd52;
+		padding: 10px;
+		display: inline-block;
+		font-size: 1.3rem;
+		color: white;
+		border-radius: 50%;
+	}
+
+	&__field {
+		padding: 5px 5px 5px 5px;
+		border: 0;
+		font-size: 1.5rem;
+		background: transparent;
+		border-bottom: 1px solid white;
+		margin-right: 1em;
+		color: grey;
+
+		&:focus-visible {
+			outline: none;
+		}
+	}
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px;
+	color: rgb(168, 160, 160);
+}
+
+.title {
+	color: white;
+}
